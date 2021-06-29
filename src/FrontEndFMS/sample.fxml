@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="749.0" styleClass="bodybg" stylesheets="@../YourProfile.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.Main">
+   <children>
+      <Label layoutX="194.0" prefHeight="104.0" prefWidth="361.0" text="Faculty Management System" textAlignment="CENTER" textFill="#4d6091">
+         <font>
+            <Font name="Book Antiqua Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="643.0" layoutY="421.0" mnemonicParsing="false" onAction="#Status" prefHeight="22.0" prefWidth="71.0" text="Continue">
+         <font>
+            <Font name="Bookman Old Style Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="569.0" layoutY="420.0" mnemonicParsing="false" onAction="#showALL" prefHeight="24.0" prefWidth="65.0" text="Show">
+         <font>
+            <Font name="Bookman Old Style Bold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

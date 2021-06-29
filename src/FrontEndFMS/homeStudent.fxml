@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="411.0" prefWidth="747.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.HomeStudentController">
+   <children>
+      <ImageView fitHeight="426.0" fitWidth="757.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/homebg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="schButton" layoutX="182.0" layoutY="302.0" mnemonicParsing="false" onAction="#displayCourses" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #4d6091;" text="Register Course" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="472.0" layoutY="302.0" mnemonicParsing="false" onAction="#ScholarshipForm" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: #4d6091;" text="Apply for Scholarship" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="208.0" layoutX="134.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/mark.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="199.0" layoutX="434.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/scholarship.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="310.0" layoutY="22.0" prefHeight="45.0" prefWidth="137.0" text="Student" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #4d6091;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

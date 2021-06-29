@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="364.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.Controller">
+   <children>
+      <ImageView fitHeight="368.0" fitWidth="654.0" layoutX="-188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/homebg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="119.0" layoutX="54.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/hire.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="119.0" layoutX="276.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/salary.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="81.0" layoutY="250.0" onAction="#manageTeacher" mnemonicParsing="false" text="Hire/ Fire" />
+      <Button layoutX="290.0" layoutY="250.0" mnemonicParsing="false" onAction="#CourseTeacher" text="Course Assign" />
+      <Label layoutX="146.0" layoutY="23.0" text="Manage Faculty" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

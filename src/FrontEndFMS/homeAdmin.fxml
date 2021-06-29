@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="398.0" prefWidth="721.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.Controller">
+   <children>
+      <ImageView fitHeight="414.0" fitWidth="743.0" layoutX="-8.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/homebg.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="152.0" layoutY="182.0" mnemonicParsing="false" onAction="#TeacherOpts" style="-fx-background-color: #4d6091;" text="Manage Teacher" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="142.0" layoutY="361.0" mnemonicParsing="false" onAction="#manageAccountant" style="-fx-background-color: #4d6091;" text="Manage Accountant" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="470.0" layoutY="182.0" mnemonicParsing="false" onAction="#manageLeaves" style="-fx-background-color: #4d6091;" text="Leave Application" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="464.0" layoutY="361.0" mnemonicParsing="false" onAction="#manageScholarship" style="-fx-background-color: #4d6091;" text="Scholarship Application" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="126.0" layoutX="141.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/hire.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="141.0" layoutX="139.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/fire.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="126.0" layoutX="464.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/manage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="134.0" layoutX="472.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/student.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="259.0" layoutY="11.0" prefHeight="36.0" prefWidth="238.0" text="Administrator" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#Status" style="-fx-background-color: #4d6091;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

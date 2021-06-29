@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="599.0" style="-fx-background-color: #FFFFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.StudentController">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <children>
+      <Label fx:id="loginStatus" layoutX="26.0" layoutY="11.0" prefHeight="17.0" prefWidth="14.0" text="Label" textFill="WHITE" />
+      <ImageView fitHeight="375.0" fitWidth="666.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/homebg.png" />
+         </image>
+      </ImageView>
+        <Button layoutX="537.0" layoutY="19.0" mnemonicParsing="false" onAction="#Status" style="-fx-background-radius: 20; -fx-background-color: #4d6091;" text="&lt;" textFill="#f8f6f6" />
+        <Button layoutX="567.0" layoutY="19.0" mnemonicParsing="false" onAction="#close" style="-fx-rotate: 45; -fx-background-radius: 20; -fx-background-color: #4d6091;" text="+" textFill="#fcf7f7" />
+        <ImageView fitHeight="156.0" fitWidth="248.0" layoutX="372.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/workstudent.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="loginReg" layoutX="133.0" layoutY="145.0" prefHeight="25.0" prefWidth="177.0" promptText="Registration Number" />
+        <PasswordField fx:id="loginPassword" layoutX="134.0" layoutY="184.0" prefHeight="25.0" prefWidth="177.0" promptText="Password" />
+        <Label layoutX="78.0" layoutY="97.0" prefHeight="25.0" prefWidth="144.0" text="Student" textFill="#4d6091">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="264.0" layoutY="232.0" mnemonicParsing="false" onAction="#LoginStudent" text="Login" textFill="#4d6091" />
+    </children>
+</AnchorPane>

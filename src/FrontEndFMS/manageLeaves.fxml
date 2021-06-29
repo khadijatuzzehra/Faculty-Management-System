@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="604.0" prefWidth="860.0" style="-fx-background-color: #371346;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEndFMS.Controller">
+    <children>
+        <TabPane layoutY="32.0" prefHeight="572.0" prefWidth="900.0" style="-fx-background-color: #FEE715FF;" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Leave">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #101820FF;">
+                            <children>
+                                <SplitPane dividerPositions="0.5" layoutY="-8.0" orientation="VERTICAL" prefHeight="338.0" prefWidth="200.0" AnchorPane.bottomAnchor="-190.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-8.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="326.0" prefWidth="428.0">
+                                            <children>
+                                                <TableView fx:id="TableIDL" layoutY="4.0" prefHeight="363.0" prefWidth="898.0" style="-fx-background-color: #371346;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="applicantID" prefWidth="76.0" text="Applicant ID" />
+                                                        <TableColumn fx:id="applicantName" prefWidth="230.0" text="Name" />
+                                                        <TableColumn fx:id="applicantReason" minWidth="0.0" prefWidth="150.0" text="Reason" />
+                                                        <TableColumn fx:id="applicantStatus" minWidth="0.0" prefWidth="110.0" text="Status" />
+                                                        <TableColumn fx:id="startDate" minWidth="0.0" prefWidth="146.0" text="Start Date" />
+                                                        <TableColumn fx:id="endDate" prefWidth="185.0" text="End Date" />
+                                                    </columns>
+                                                </TableView>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="114.0" prefWidth="807.0" style="-fx-background-color: #371346;">
+                                            <children>
+                                                <HBox layoutY="2.9000000953674316" />
+                                                <Button fx:id="FData" layoutX="764.0" layoutY="98.0" mnemonicParsing="false" onAction="#loadLeaves" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: #FFFFFFFF;" text="Display" textFill="#371346" />
+                                                <Button fx:id="FData1" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" onAction="#getLeaveDetails" prefHeight="31.0" prefWidth="67.0" style="-fx-background-color: #FFFFFFFF;" text="Approve" textFill="#371346" />
+                                    <Button fx:id="FData2" layoutX="796.0" layoutY="50.0" mnemonicParsing="false" onAction="#deleteLeave" prefHeight="31.0" prefWidth="54.0" style="-fx-background-color: #FFFFFFFF;" text="Delete" textFill="#371346" />
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+      <Button layoutX="848.0" layoutY="1.0" mnemonicParsing="false" onAction="#homeAdmin" prefHeight="7.0" prefWidth="44.0" text="Back" textFill="#371346" />
+    </children>
+</AnchorPane>
